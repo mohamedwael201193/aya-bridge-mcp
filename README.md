@@ -96,6 +96,7 @@ graph TB
     style B fill:#f3e5f5
     style M fill:#fff3e0
     style O fill:#e8f5e8
+```
 🛠 Technology Stack
 Core Technologies
 
