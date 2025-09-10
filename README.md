@@ -1,75 +1,64 @@
-markdownDownloadCopy code Wrap# 🌉 AyaBridge Universal DeFi Bridge MCP
+🌉 AyaBridge Universal DeFi Bridge MCP
 
-<div align="center">
 
-[![CI Status](https://github.com/mohamedwael201193/aya-bridge-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/mohamedwael201193/aya-bridge-mcp/actions)
-[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Node.js](https://img.shields.io/badge/Node.js-43853D?style=flat&logo=node.js&logoColor=white)](https://nodejs.org/)
-[![Express.js](https://img.shields.io/badge/Express.js-404D59?style=flat&logo=express)](https://expressjs.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+AI-Powered Cross-Chain DeFi Bridge Optimization Platform
+Live Demo • API Documentation • Installation • Usage
+📋 Table of Contents
 
-**AI-Powered Cross-Chain DeFi Bridge Optimization Platform**
+* Overview
+* Features
+* Architecture
+* Technology Stack
+* Installation
+* Configuration
+* Usage
+* API Reference
+* Available Tools
+* MCP Integration
+* AI Components
+* Blockchain Integration
+* Development
+* Testing
+* Deployment
+* Monitoring & Analytics
+* Contributing
+* License
 
-[Live Demo](https://aya-bridge-mcp.onrender.com) • [API Documentation](#api-reference) • [Installation](#installation) • [Usage](#usage)
+🎯 Overview
+AyaBridge is a Model Context Protocol (MCP) server that provides AI‑powered cross‑chain DeFi bridge optimization. It combines machine learning models, real‑time blockchain data, and intelligent routing algorithms to deliver optimal bridging solutions across multiple blockchain networks.
+The platform integrates with the Aya ecosystem to provide seamless cross‑chain transactions with advanced risk assessment, cost optimization, and yield farming opportunities.
+✨ Features
+🧠 AI‑Powered Analysis
 
-</div>
+* Risk Assessment: ML‑based security scoring using Comput3.ai GPU infrastructure
+* Gas Optimization: Predictive gas pricing with time‑series analysis
+* Yield Opportunities: AI‑driven DeFi yield farming recommendations
+* Route Optimization: Intelligent pathfinding across bridge protocols
 
-## 📋 Table of Contents
+🌐 Multi‑Chain Support
 
-- [Overview](#overview)
-- [Features](#features)
-- [Architecture](#architecture)
-- [Technology Stack](#technology-stack)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Usage](#usage)
-- [API Reference](#api-reference)
-- [MCP Integration](#mcp-integration)
-- [AI Components](#ai-components)
-- [Blockchain Integration](#blockchain-integration)
-- [Development](#development)
-- [Testing](#testing)
-- [Deployment](#deployment)
-- [Contributing](#contributing)
-- [License](#license)
+* Ethereum — Primary layer 1 network
+* Polygon — Layer 2 scaling solution
+* Arbitrum — Optimistic rollup
+* Optimism — Optimistic rollup
+* Base — Coinbase layer 2
 
-## 🎯 Overview
+🔗 Bridge Protocol Integration
 
-AyaBridge is a sophisticated Model Context Protocol (MCP) server that provides AI-powered cross-chain DeFi bridge optimization. It combines machine learning models, real-time blockchain data, and intelligent routing algorithms to deliver optimal bridging solutions across multiple blockchain networks.
+* Stargate Finance — Omnichain liquidity protocol
+* Across Protocol — Cross‑chain bridge
+* Hop Protocol — Multi‑chain rollup bridge
+* Synapse Bridge — Cross‑chain infrastructure
 
-The platform integrates with the Aya ecosystem to provide seamless cross-chain transactions with advanced risk assessment, cost optimization, and yield farming opportunities.
+🔐 Security & Monitoring
 
-## ✨ Features
+* Real‑time Monitoring — Transaction status tracking
+* Emergency Controls — Automated pause mechanisms
+* Hedera Logging — Immutable audit trails
+* Risk Scoring — Multi‑factor security analysis
 
-### 🧠 AI-Powered Analysis
-- **Risk Assessment**: ML-based security scoring using Comput3.ai GPU infrastructure
-- **Gas Optimization**: Predictive gas pricing with time-series analysis
-- **Yield Opportunities**: AI-driven DeFi yield farming recommendations
-- **Route Optimization**: Intelligent pathfinding across bridge protocols
-
-### 🌐 Multi-Chain Support
-- **Ethereum** - Primary layer 1 network
-- **Polygon** - Layer 2 scaling solution
-- **Arbitrum** - Optimistic rollup
-- **Optimism** - Optimistic rollup
-- **Base** - Coinbase layer 2
-
-### 🔗 Bridge Protocol Integration
-- **Stargate Finance** - Omnichain liquidity protocol
-- **Across Protocol** - Cross-chain bridge
-- **Hop Protocol** - Multi-chain rollup bridge
-- **Synapse Bridge** - Cross-chain infrastructure
-
-### 🔐 Security & Monitoring
-- **Real-time Monitoring** - Transaction status tracking
-- **Emergency Controls** - Automated pause mechanisms
-- **Hedera Logging** - Immutable audit trails
-- **Risk Scoring** - Multi-factor security analysis
-
-## 🏗 Architecture
-
-```mermaid
-graph TB
+🏗 Architecture
+mermaidDownloadCopy code Wrapgraph TB
     A[Aya App] --> B[MCP Server]
     B --> C[Express API]
     C --> D[Tool Router]
@@ -96,7 +85,6 @@ graph TB
     style B fill:#f3e5f5
     style M fill:#fff3e0
     style O fill:#e8f5e8
-
 🛠 Technology Stack
 Core Technologies
 
@@ -109,18 +97,18 @@ AI & Machine Learning
 
 * GPU Compute: Comput3.ai infrastructure
 * Models: Custom risk assessment, gas prediction, yield optimization
-* Processing: Real-time inference with sub-second latency
+* Processing: Real‑time inference with sub‑second latency
 
 Blockchain Integration
 
 * Web3: Ethers.js 6.x for Ethereum interaction
 * Hedera: HashGraph SDK for consensus logging
-* RPCs: Multi-provider failover system
+* RPCs: Multi‑provider failover system
 * Protocols: Direct smart contract integration
 
 Infrastructure
 
-* Database: In-memory caching with Redis patterns
+* Database: In‑memory caching with Redis patterns
 * Logging: Winston structured logging
 * Security: Helmet.js middleware
 * Testing: Jest with comprehensive coverage
@@ -179,8 +167,9 @@ Testing
 bashDownloadCopy code Wrapnpm test
 📖 API Reference
 Base URL
-Production: https://aya-bridge-mcp.onrender.com
-Development: http://localhost:3000
+
+* Production: https://aya-bridge-mcp.onrender.com
+* Development: http://localhost:3000
 
 Health Check
 httpDownloadCopy code WrapGET /health
@@ -200,7 +189,7 @@ jsonDownloadCopy code Wrap{
       "description": "Find optimal cross-chain bridge route"
     },
     {
-      "name": "calculate_bridge_costs", 
+      "name": "calculate_bridge_costs",
       "description": "Calculate total fees and costs"
     }
   ]
@@ -208,8 +197,8 @@ jsonDownloadCopy code Wrap{
 Execute Tool
 httpDownloadCopy code WrapPOST /invoke
 Content-Type: application/json
-
-{
+Body:
+jsonDownloadCopy code Wrap{
   "tool": "tool_name",
   "arguments": {
     "param1": "value1",
@@ -217,15 +206,15 @@ Content-Type: application/json
   }
 }
 🔧 Available Tools
-1. Bridge Route Analysis
-Purpose: Find optimal cross-chain bridging routes
+1) Bridge Route Analysis
+Purpose: Find optimal cross‑chain bridging routes
 bashDownloadCopy code Wrapcurl -X POST https://aya-bridge-mcp.onrender.com/invoke \
   -H "Content-Type: application/json" \
   -d '{
     "tool": "analyze_bridge_route",
     "arguments": {
       "fromChain": "ethereum",
-      "toChain": "polygon", 
+      "toChain": "polygon",
       "token": "usdc",
       "amount": "5000"
     }
@@ -242,14 +231,14 @@ jsonDownloadCopy code Wrap{
       "totalCost": "12.45",
       "estimatedOutput": "4987.55"
     },
-    "alternatives": [...],
+    "alternatives": [],
     "aiInsights": {
       "confidence": 95,
       "processingTime": "247ms"
     }
   }
 }
-2. Cost Calculator
+2) Cost Calculator
 Purpose: Calculate comprehensive bridging costs
 bashDownloadCopy code Wrapcurl -X POST https://aya-bridge-mcp.onrender.com/invoke \
   -H "Content-Type: application/json" \
@@ -263,8 +252,8 @@ bashDownloadCopy code Wrapcurl -X POST https://aya-bridge-mcp.onrender.com/invok
       }
     }
   }'
-3. AI Risk Assessment
-Purpose: ML-powered security and risk analysis
+3) AI Risk Assessment
+Purpose: ML‑powered security and risk analysis
 bashDownloadCopy code Wrapcurl -X POST https://aya-bridge-mcp.onrender.com/invoke \
   -H "Content-Type: application/json" \
   -d '{
@@ -276,12 +265,12 @@ bashDownloadCopy code Wrapcurl -X POST https://aya-bridge-mcp.onrender.com/invok
       "toChain": "polygon"
     }
   }'
-4. Bridge Execution
-Purpose: Execute cross-chain transactions with Hedera logging
+4) Bridge Execution
+Purpose: Execute cross‑chain transactions with Hedera logging
 bashDownloadCopy code Wrapcurl -X POST https://aya-bridge-mcp.onrender.com/invoke \
   -H "Content-Type: application/json" \
   -d '{
-    "tool": "execute_bridge_transaction", 
+    "tool": "execute_bridge_transaction",
     "arguments": {
       "route": {
         "fromChain": "ethereum",
@@ -292,28 +281,24 @@ bashDownloadCopy code Wrapcurl -X POST https://aya-bridge-mcp.onrender.com/invok
       "userAddress": "0x1234567890123456789012345678901234567890"
     }
   }'
-5. Transaction Monitoring
-Purpose: Real-time cross-chain transaction tracking
-6. Yield Opportunities
-Purpose: AI-driven DeFi yield farming recommendations
-7. Gas Optimization
-Purpose: ML-based gas price prediction and optimization
-8. Emergency Controls
+5) Transaction Monitoring
+Purpose: Real‑time cross‑chain transaction tracking
+6) Yield Opportunities
+Purpose: AI‑driven DeFi yield farming recommendations
+7) Gas Optimization
+Purpose: ML‑based gas price prediction and optimization
+8) Emergency Controls
 Purpose: Security pause mechanisms with blockchain logging
 🤝 MCP Integration
 MCP Server Setup
-The server implements the Model Context Protocol for seamless integration with Aya and other compatible applications:
+Implements the Model Context Protocol for integration with Aya and other compatible applications:
 typescriptDownloadCopy code Wrapimport { Server } from '@modelcontextprotocol/sdk/server/index.js';
 import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
 
-const server = new Server({
-  name: 'aya-bridge-mcp',
-  version: '1.0.0',
-}, {
-  capabilities: {
-    tools: {},
-  },
-});
+const server = new Server(
+  { name: 'aya-bridge-mcp', version: '1.0.0' },
+  { capabilities: { tools: {} } }
+);
 Tool Registration
 Each tool is registered with proper input schemas:
 typescriptDownloadCopy code Wrapserver.setRequestHandler(ListToolsRequestSchema, async () => {
@@ -338,7 +323,7 @@ typescriptDownloadCopy code Wrapserver.setRequestHandler(ListToolsRequestSchema,
 });
 🧠 AI Components
 Comput3.ai Integration
-The platform leverages Comput3.ai's GPU infrastructure for real-time AI processing:
+Real‑time AI processing via Comput3.ai GPU infrastructure:
 typescriptDownloadCopy code Wrapconst aiResponse = await axios.post('https://api.comput3.ai/inference', {
   model: 'bridge-risk-analyzer-v2.1',
   input: riskFactors,
@@ -354,8 +339,8 @@ typescriptDownloadCopy code Wrapconst aiResponse = await axios.post('https://api
 });
 ML Models
 
-1. Risk Assessment Model: 47-feature security analysis
-2. Gas Prediction Model: Time-series price forecasting
+1. Risk Assessment Model: 47‑feature security analysis
+2. Gas Prediction Model: Time‑series price forecasting
 3. Yield Optimization Model: Portfolio optimization algorithms
 
 ⛓️ Blockchain Integration
@@ -364,19 +349,19 @@ Immutable logging using Hedera Consensus Service:
 typescriptDownloadCopy code Wrapimport { Client, TopicCreateTransaction, TopicMessageSubmitTransaction } from '@hashgraph/sdk';
 
 const client = Client.forTestnet().setOperator(
-  process.env.HEDERA_ACCOUNT_ID,
-  process.env.HEDERA_PRIVATE_KEY
+  process.env.HEDERA_ACCOUNT_ID!,
+  process.env.HEDERA_PRIVATE_KEY!
 );
 
 const topicId = await new TopicCreateTransaction()
-  .setTopicMemo("AyaBridge Transaction Log")
+  .setTopicMemo('AyaBridge Transaction Log')
   .execute(client);
 
 const messageId = await new TopicMessageSubmitTransaction()
   .setTopicId(topicId)
   .setMessage(JSON.stringify(transactionData))
   .execute(client);
-Multi-Chain RPC Management
+Multi‑Chain RPC Management
 Failover system across multiple RPC providers:
 typescriptDownloadCopy code Wrapconst providers = [
   new ethers.JsonRpcProvider(process.env.ETHEREUM_RPC_URL),
@@ -404,18 +389,17 @@ aya-bridge-mcp/
 │   │   ├── logger.ts
 │   │   ├── cache.ts
 │   │   └── validation.ts
-│   └── index.ts             # Main server entry point
-├── tests/                   # Test suites
+│   └── index.ts              # Main server entry point
+├── tests/
 │   └── tools/
 │       └── analyze_bridge_route.test.ts
-├── dist/                    # Compiled JavaScript
+├── dist/                     # Compiled JavaScript
 ├── package.json
 ├── tsconfig.json
 ├── jest.config.js
 └── README.md
 
 Code Style
-The project follows strict TypeScript standards:
 
 * ESLint: Airbnb configuration
 * Prettier: Code formatting
@@ -440,7 +424,7 @@ bashDownloadCopy code Wrap# Run all tests
 npm test
 
 # Watch mode
-npm run test:watch  
+npm run test:watch
 
 # Coverage report
 npm run test:coverage
@@ -450,26 +434,24 @@ typescriptDownloadCopy code Wrapdescribe('analyze_bridge_route', () => {
     const args = {
       fromChain: 'ethereum',
       toChain: 'polygon',
-      token: 'usdc', 
+      token: 'usdc',
       amount: '1000'
     };
 
     const result = await analyzeBridgeRoute(args);
-    
+
     expect(result.success).toBe(true);
     expect(result.data.route).toBeDefined();
     expect(result.data.route.bridges).toContain('stargate');
   });
 });
 🚀 Deployment
-Production Deployment
-The application is deployed on Render.com with:
+Production Deployment (Render)
 
 * Automatic deployments from main branch
 * Environment variable management
 * Health check monitoring
 * SSL/TLS encryption
-* CDN acceleration
 
 Docker Deployment
 dockerfileDownloadCopy code WrapFROM node:18-alpine
@@ -499,23 +481,21 @@ typescriptDownloadCopy code Wraplogger.info('Tool execution started', {
   requestId: generateRequestId()
 });
 Metrics
-Key performance indicators:
 
-* Response Time: Sub-second AI processing
+* Response Time: Sub‑second AI processing
 * Success Rate: >99% tool execution
 * Cache Hit Rate: 85%+ for repeated queries
 * Uptime: 99.9% availability
 
 Error Handling
-Comprehensive error management:
 typescriptDownloadCopy code Wraptry {
   const result = await executeTool(name, args);
   return { success: true, data: result };
-} catch (error) {
-  logger.error('Tool execution failed', { 
-    tool: name, 
+} catch (error: any) {
+  logger.error('Tool execution failed', {
+    tool: name,
     error: error.message,
-    stack: error.stack 
+    stack: error.stack
   });
   return { success: false, error: error.message };
 }
@@ -534,7 +514,7 @@ Development Process
 Code of Conduct
 Please read our Code of Conduct before contributing.
 📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License — see the LICENSE file for details.
 
 Built with ❤️ for the DeFi ecosystem
 Website • Documentation • Support
