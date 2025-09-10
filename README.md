@@ -97,53 +97,70 @@ graph TB
     style M fill:#fff3e0
     style O fill:#e8f5e8
 ```
-🛠 Technology Stack
-Core Technologies
 
-* Runtime: Node.js 18+
-* Language: TypeScript 5.x
-* Framework: Express.js 4.x
-* Protocol: Model Context Protocol (MCP)
+## 🛠 Technology Stack
 
-AI & Machine Learning
+### Core Technologies
+- **Runtime**: Node.js 18+
+- **Language**: TypeScript 5.x
+- **Framework**: Express.js 4.x
+- **Protocol**: Model Context Protocol (MCP)
 
-* GPU Compute: Comput3.ai infrastructure
-* Models: Custom risk assessment, gas prediction, yield optimization
-* Processing: Real-time inference with sub-second latency
+### AI & Machine Learning
+- **GPU Compute**: Comput3.ai infrastructure
+- **Models**: Custom risk assessment, gas prediction, yield optimization
+- **Processing**: Real-time inference with sub-second latency
 
-Blockchain Integration
+### Blockchain Integration
+- **Web3**: Ethers.js 6.x for Ethereum interaction
+- **Hedera**: HashGraph SDK for consensus logging
+- **RPCs**: Multi-provider failover system
+- **Protocols**: Direct smart contract integration
 
-* Web3: Ethers.js 6.x for Ethereum interaction
-* Hedera: HashGraph SDK for consensus logging
-* RPCs: Multi-provider failover system
-* Protocols: Direct smart contract integration
+### Infrastructure
+- **Database**: In-memory caching with Redis patterns
+- **Logging**: Winston structured logging
+- **Security**: Helmet.js middleware
+- **Testing**: Jest with comprehensive coverage
+- **CI/CD**: GitHub Actions automation
 
-Infrastructure
+---
 
-* Database: In-memory caching with Redis patterns
-* Logging: Winston structured logging
-* Security: Helmet.js middleware
-* Testing: Jest with comprehensive coverage
-* CI/CD: GitHub Actions automation
+## 📦 Installation
 
-📦 Installation
-Prerequisites
+### Prerequisites
+- Node.js 18.0 or higher  
+- npm 8.0 or higher  
+- Git  
 
-* Node.js 18.0 or higher
-* npm 8.0 or higher
-* Git
-
-Clone Repository
-bashDownloadCopy code Wrapgit clone https://github.com/mohamedwael201193/aya-bridge-mcp.git
+### Clone Repository
+```bash
+git clone https://github.com/mohamedwael201193/aya-bridge-mcp.git
 cd aya-bridge-mcp
-Install Dependencies
-bashDownloadCopy code Wrapnpm install
-Build Project
-bashDownloadCopy code Wrapnpm run build
-⚙️ Configuration
-Environment Variables
-Create a .env file in the project root:
-bashDownloadCopy code Wrap# Hedera Configuration
+````
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Build Project
+
+```bash
+npm run build
+```
+
+---
+
+## ⚙️ Configuration
+
+### Environment Variables
+
+Create a `.env` file in the project root:
+
+```bash
+# Hedera Configuration
 HEDERA_ACCOUNT_ID=0.0.YOUR_ACCOUNT_ID
 HEDERA_PRIVATE_KEY=0xYOUR_PRIVATE_KEY_HERE
 
@@ -163,37 +180,72 @@ OPTIMISM_RPC_URL=https://optimism.llamarpc.com
 # Server Configuration
 PORT=3000
 NODE_ENV=development
-API Keys Setup
+```
 
-1. Hedera Account: Create account at Hedera Portal
-2. Comput3.ai: Register at Comput3.ai Platform
-3. CoinGecko: Get free API key at CoinGecko API
-4. Moralis: Sign up at Moralis.io
+### API Keys Setup
 
-🚀 Usage
-Development Mode
-bashDownloadCopy code Wrapnpm run dev
-Production Mode
-bashDownloadCopy code Wrapnpm start
-Testing
-bashDownloadCopy code Wrapnpm test
-📖 API Reference
-Base URL
-Production: https://aya-bridge-mcp.onrender.com
-Development: http://localhost:3000
+1. **Hedera Account**: Create account at [Hedera Portal](https://portal.hedera.com)
+2. **Comput3.ai**: Register at [Comput3.ai Platform](https://comput3.ai)
+3. **CoinGecko**: Get free API key at [CoinGecko API](https://coingecko.com)
+4. **Moralis**: Sign up at [Moralis.io](https://moralis.io)
 
-Health Check
-httpDownloadCopy code WrapGET /health
-Response:
-jsonDownloadCopy code Wrap{
+---
+
+## 🚀 Usage
+
+### Development Mode
+
+```bash
+npm run dev
+```
+
+### Production Mode
+
+```bash
+npm start
+```
+
+### Testing
+
+```bash
+npm test
+```
+
+---
+
+## 📖 API Reference
+
+### Base URL
+
+* **Production**: `https://aya-bridge-mcp.onrender.com`
+* **Development**: `http://localhost:3000`
+
+### Health Check
+
+```http
+GET /health
+```
+
+**Response:**
+
+```json
+{
   "status": "healthy",
   "timestamp": 1757480000000,
   "service": "AyaBridge Universal DeFi Bridge MCP"
 }
-List Available Tools
-httpDownloadCopy code WrapGET /tools
-Response:
-jsonDownloadCopy code Wrap{
+```
+
+### List Available Tools
+
+```http
+GET /tools
+```
+
+**Response:**
+
+```json
+{
   "tools": [
     {
       "name": "analyze_bridge_route",
@@ -205,8 +257,12 @@ jsonDownloadCopy code Wrap{
     }
   ]
 }
-Execute Tool
-httpDownloadCopy code WrapPOST /invoke
+```
+
+### Execute Tool
+
+```http
+POST /invoke
 Content-Type: application/json
 
 {
@@ -216,10 +272,18 @@ Content-Type: application/json
     "param2": "value2"
   }
 }
-🔧 Available Tools
-1. Bridge Route Analysis
-Purpose: Find optimal cross-chain bridging routes
-bashDownloadCopy code Wrapcurl -X POST https://aya-bridge-mcp.onrender.com/invoke \
+```
+
+---
+
+## 🔧 Available Tools
+
+### 1. Bridge Route Analysis
+
+**Purpose**: Find optimal cross-chain bridging routes
+
+```bash
+curl -X POST https://aya-bridge-mcp.onrender.com/invoke \
   -H "Content-Type: application/json" \
   -d '{
     "tool": "analyze_bridge_route",
@@ -230,8 +294,12 @@ bashDownloadCopy code Wrapcurl -X POST https://aya-bridge-mcp.onrender.com/invok
       "amount": "5000"
     }
   }'
-Response:
-jsonDownloadCopy code Wrap{
+```
+
+**Response:**
+
+```json
+{
   "success": true,
   "data": {
     "route": {
@@ -249,9 +317,16 @@ jsonDownloadCopy code Wrap{
     }
   }
 }
-2. Cost Calculator
-Purpose: Calculate comprehensive bridging costs
-bashDownloadCopy code Wrapcurl -X POST https://aya-bridge-mcp.onrender.com/invoke \
+```
+
+---
+
+### 2. Cost Calculator
+
+**Purpose**: Calculate comprehensive bridging costs
+
+```bash
+curl -X POST https://aya-bridge-mcp.onrender.com/invoke \
   -H "Content-Type: application/json" \
   -d '{
     "tool": "calculate_bridge_costs",
@@ -263,9 +338,16 @@ bashDownloadCopy code Wrapcurl -X POST https://aya-bridge-mcp.onrender.com/invok
       }
     }
   }'
-3. AI Risk Assessment
-Purpose: ML-powered security and risk analysis
-bashDownloadCopy code Wrapcurl -X POST https://aya-bridge-mcp.onrender.com/invoke \
+```
+
+---
+
+### 3. AI Risk Assessment
+
+**Purpose**: ML-powered security and risk analysis
+
+```bash
+curl -X POST https://aya-bridge-mcp.onrender.com/invoke \
   -H "Content-Type: application/json" \
   -d '{
     "tool": "assess_bridge_risks",
@@ -276,9 +358,16 @@ bashDownloadCopy code Wrapcurl -X POST https://aya-bridge-mcp.onrender.com/invok
       "toChain": "polygon"
     }
   }'
-4. Bridge Execution
-Purpose: Execute cross-chain transactions with Hedera logging
-bashDownloadCopy code Wrapcurl -X POST https://aya-bridge-mcp.onrender.com/invoke \
+```
+
+---
+
+### 4. Bridge Execution
+
+**Purpose**: Execute cross-chain transactions with Hedera logging
+
+```bash
+curl -X POST https://aya-bridge-mcp.onrender.com/invoke \
   -H "Content-Type: application/json" \
   -d '{
     "tool": "execute_bridge_transaction", 
@@ -292,18 +381,34 @@ bashDownloadCopy code Wrapcurl -X POST https://aya-bridge-mcp.onrender.com/invok
       "userAddress": "0x1234567890123456789012345678901234567890"
     }
   }'
-5. Transaction Monitoring
-Purpose: Real-time cross-chain transaction tracking
-6. Yield Opportunities
-Purpose: AI-driven DeFi yield farming recommendations
-7. Gas Optimization
-Purpose: ML-based gas price prediction and optimization
-8. Emergency Controls
-Purpose: Security pause mechanisms with blockchain logging
-🤝 MCP Integration
-MCP Server Setup
-The server implements the Model Context Protocol for seamless integration with Aya and other compatible applications:
-typescriptDownloadCopy code Wrapimport { Server } from '@modelcontextprotocol/sdk/server/index.js';
+```
+
+---
+
+### 5. Transaction Monitoring
+
+**Purpose**: Real-time cross-chain transaction tracking
+
+### 6. Yield Opportunities
+
+**Purpose**: AI-driven DeFi yield farming recommendations
+
+### 7. Gas Optimization
+
+**Purpose**: ML-based gas price prediction and optimization
+
+### 8. Emergency Controls
+
+**Purpose**: Security pause mechanisms with blockchain logging
+
+---
+
+## 🤝 MCP Integration
+
+### MCP Server Setup
+
+```typescript
+import { Server } from '@modelcontextprotocol/sdk/server/index.js';
 import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
 
 const server = new Server({
@@ -314,9 +419,12 @@ const server = new Server({
     tools: {},
   },
 });
-Tool Registration
-Each tool is registered with proper input schemas:
-typescriptDownloadCopy code Wrapserver.setRequestHandler(ListToolsRequestSchema, async () => {
+```
+
+### Tool Registration
+
+```typescript
+server.setRequestHandler(ListToolsRequestSchema, async () => {
   return {
     tools: [
       {
@@ -336,10 +444,16 @@ typescriptDownloadCopy code Wrapserver.setRequestHandler(ListToolsRequestSchema,
     ]
   };
 });
-🧠 AI Components
-Comput3.ai Integration
-The platform leverages Comput3.ai's GPU infrastructure for real-time AI processing:
-typescriptDownloadCopy code Wrapconst aiResponse = await axios.post('https://api.comput3.ai/inference', {
+```
+
+---
+
+## 🧠 AI Components
+
+### Comput3.ai Integration
+
+```typescript
+const aiResponse = await axios.post('https://api.comput3.ai/inference', {
   model: 'bridge-risk-analyzer-v2.1',
   input: riskFactors,
   parameters: {
@@ -352,16 +466,22 @@ typescriptDownloadCopy code Wrapconst aiResponse = await axios.post('https://api
     'Content-Type': 'application/json'
   }
 });
-ML Models
+```
 
-1. Risk Assessment Model: 47-feature security analysis
-2. Gas Prediction Model: Time-series price forecasting
-3. Yield Optimization Model: Portfolio optimization algorithms
+### ML Models
 
-⛓️ Blockchain Integration
-Hedera Integration
-Immutable logging using Hedera Consensus Service:
-typescriptDownloadCopy code Wrapimport { Client, TopicCreateTransaction, TopicMessageSubmitTransaction } from '@hashgraph/sdk';
+1. **Risk Assessment Model**: 47-feature security analysis
+2. **Gas Prediction Model**: Time-series price forecasting
+3. **Yield Optimization Model**: Portfolio optimization algorithms
+
+---
+
+## ⛓️ Blockchain Integration
+
+### Hedera Integration
+
+```typescript
+import { Client, TopicCreateTransaction, TopicMessageSubmitTransaction } from '@hashgraph/sdk';
 
 const client = Client.forTestnet().setOperator(
   process.env.HEDERA_ACCOUNT_ID,
@@ -376,15 +496,25 @@ const messageId = await new TopicMessageSubmitTransaction()
   .setTopicId(topicId)
   .setMessage(JSON.stringify(transactionData))
   .execute(client);
-Multi-Chain RPC Management
-Failover system across multiple RPC providers:
-typescriptDownloadCopy code Wrapconst providers = [
+```
+
+### Multi-Chain RPC Management
+
+```typescript
+const providers = [
   new ethers.JsonRpcProvider(process.env.ETHEREUM_RPC_URL),
   new ethers.JsonRpcProvider('https://ethereum.publicnode.com'),
   new ethers.JsonRpcProvider('https://rpc.ankr.com/eth')
 ];
-👨‍💻 Development
-Project Structure
+```
+
+---
+
+## 👨‍💻 Development
+
+### Project Structure
+
+```
 aya-bridge-mcp/
 ├── src/
 │   ├── tools/                 # MCP tools implementation
@@ -404,39 +534,47 @@ aya-bridge-mcp/
 │   │   ├── logger.ts
 │   │   ├── cache.ts
 │   │   └── validation.ts
-│   └── index.ts             # Main server entry point
-├── tests/                   # Test suites
+│   └── index.ts              # Main server entry point
+├── tests/                    # Test suites
 │   └── tools/
 │       └── analyze_bridge_route.test.ts
-├── dist/                    # Compiled JavaScript
+├── dist/                     # Compiled JavaScript
 ├── package.json
 ├── tsconfig.json
 ├── jest.config.js
 └── README.md
+```
 
-Code Style
-The project follows strict TypeScript standards:
+### Code Style
 
-* ESLint: Airbnb configuration
-* Prettier: Code formatting
-* Strict Types: Full type safety
-* Documentation: JSDoc comments
+* **ESLint**: Airbnb configuration
+* **Prettier**: Code formatting
+* **Strict Types**: Full type safety
+* **Documentation**: JSDoc comments
 
-Adding New Tools
+### Adding New Tools
 
-1. Create tool file in src/tools/
+1. Create tool file in `src/tools/`
 2. Implement required interface:
-typescriptDownloadCopy code Wrapexport async function toolName(args: ToolArgs): Promise<ToolResponse> {
+
+```typescript
+export async function toolName(args: ToolArgs): Promise<ToolResponse> {
   // Implementation
 }
+```
 
 3. Add to main server registration
 4. Write comprehensive tests
 5. Update API documentation
 
-🧪 Testing
-Test Suite
-bashDownloadCopy code Wrap# Run all tests
+---
+
+## 🧪 Testing
+
+### Test Suite
+
+```bash
+# Run all tests
 npm test
 
 # Watch mode
@@ -444,8 +582,12 @@ npm run test:watch
 
 # Coverage report
 npm run test:coverage
-Test Structure
-typescriptDownloadCopy code Wrapdescribe('analyze_bridge_route', () => {
+```
+
+### Test Structure
+
+```typescript
+describe('analyze_bridge_route', () => {
   it('returns a recommended route', async () => {
     const args = {
       fromChain: 'ethereum',
@@ -461,18 +603,26 @@ typescriptDownloadCopy code Wrapdescribe('analyze_bridge_route', () => {
     expect(result.data.route.bridges).toContain('stargate');
   });
 });
-🚀 Deployment
-Production Deployment
-The application is deployed on Render.com with:
+```
 
-* Automatic deployments from main branch
+---
+
+## 🚀 Deployment
+
+### Production Deployment
+
+The application is deployed on **Render.com** with:
+
+* Automatic deployments from `main` branch
 * Environment variable management
 * Health check monitoring
 * SSL/TLS encryption
 * CDN acceleration
 
-Docker Deployment
-dockerfileDownloadCopy code WrapFROM node:18-alpine
+### Docker Deployment
+
+```dockerfile
+FROM node:18-alpine
 
 WORKDIR /app
 COPY package*.json ./
@@ -482,33 +632,45 @@ COPY dist/ ./dist/
 EXPOSE 3000
 
 CMD ["npm", "start"]
-Environment Setup
-bashDownloadCopy code Wrap# Production environment
+```
+
+### Environment Setup
+
+```bash
+# Production environment
 NODE_ENV=production
 PORT=10000
 
 # All API keys and configuration
 # (See Configuration section)
-📊 Monitoring & Analytics
-Logging
-Structured logging with Winston:
-typescriptDownloadCopy code Wraplogger.info('Tool execution started', {
+```
+
+---
+
+## 📊 Monitoring & Analytics
+
+### Logging
+
+```typescript
+logger.info('Tool execution started', {
   tool: toolName,
   args: sanitizedArgs,
   timestamp: Date.now(),
   requestId: generateRequestId()
 });
-Metrics
-Key performance indicators:
+```
 
-* Response Time: Sub-second AI processing
-* Success Rate: >99% tool execution
-* Cache Hit Rate: 85%+ for repeated queries
-* Uptime: 99.9% availability
+### Metrics
 
-Error Handling
-Comprehensive error management:
-typescriptDownloadCopy code Wraptry {
+* **Response Time**: Sub-second AI processing
+* **Success Rate**: >99% tool execution
+* **Cache Hit Rate**: 85%+ for repeated queries
+* **Uptime**: 99.9% availability
+
+### Error Handling
+
+```typescript
+try {
   const result = await executeTool(name, args);
   return { success: true, data: result };
 } catch (error) {
@@ -519,32 +681,51 @@ typescriptDownloadCopy code Wraptry {
   });
   return { success: false, error: error.message };
 }
-🤝 Contributing
-We welcome contributions! Please see our Contributing Guidelines.
-Development Process
+```
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions! Please see our **Contributing Guidelines**.
+
+### Development Process
 
 1. Fork the repository
-2. Create feature branch (git checkout -b feature/amazing-feature)
+2. Create feature branch:
+
+   ```bash
+   git checkout -b feature/amazing-feature
+   ```
 3. Write tests for new functionality
-4. Ensure all tests pass (npm test)
-5. Commit changes (git commit -m 'Add amazing feature')
-6. Push to branch (git push origin feature/amazing-feature)
+4. Ensure all tests pass (`npm test`)
+5. Commit changes:
+
+   ```bash
+   git commit -m 'Add amazing feature'
+   ```
+6. Push to branch:
+
+   ```bash
+   git push origin feature/amazing-feature
+   ```
 7. Open Pull Request
 
-Code of Conduct
-Please read our Code of Conduct before contributing.
-📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+### Code of Conduct
+
+Please read our **Code of Conduct** before contributing.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** – see the LICENSE file for details.
+
+---
 
 Built with ❤️ for the DeFi ecosystem
-Website • Documentation • Support
-The key fixes:
+**Website • Documentation • Support**
 
-1. ✅ Proper mermaid code block with triple backticks
-2. ✅ Added blank line after mermaid diagram
-3. ✅ All sections have proper ## and ### headers
-4. ✅ All code blocks properly formatted with language identifiers
-5. ✅ Proper markdown list formatting with - instead of *
-6. ✅ Proper spacing between sections
+```
 
-This should now render perfectly on GitHub! 🎯
+
