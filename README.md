@@ -5,43 +5,7 @@ AI‑Powered Cross‑Chain DeFi Bridge Optimization Platform
 
 [Live Demo](https://aya-bridge-mcp.onrender.com/) • [API Reference](https://yupp.ai/chat/36923d1e-9bc8-4a0a-a17f-ed7dc9d4d4d7#api-reference) • [Installation](https://yupp.ai/chat/36923d1e-9bc8-4a0a-a17f-ed7dc9d4d4d7#installation) • [Usage](https://yupp.ai/chat/36923d1e-9bc8-4a0a-a17f-ed7dc9d4d4d7#usage)
 
-📋 Table of Contents
---------------------
 
-*   [Overview](https://yupp.ai/chat/36923d1e-9bc8-4a0a-a17f-ed7dc9d4d4d7#-overview)
-    
-*   [Features](https://yupp.ai/chat/36923d1e-9bc8-4a0a-a17f-ed7dc9d4d4d7#-features)
-    
-*   [Architecture](https://yupp.ai/chat/36923d1e-9bc8-4a0a-a17f-ed7dc9d4d4d7#-architecture)
-    
-*   [Technology Stack](https://yupp.ai/chat/36923d1e-9bc8-4a0a-a17f-ed7dc9d4d4d7#-technology-stack)
-    
-*   [Installation](https://yupp.ai/chat/36923d1e-9bc8-4a0a-a17f-ed7dc9d4d4d7#-installation)
-    
-*   [Configuration](https://yupp.ai/chat/36923d1e-9bc8-4a0a-a17f-ed7dc9d4d4d7#️-configuration)
-    
-*   [Usage](https://yupp.ai/chat/36923d1e-9bc8-4a0a-a17f-ed7dc9d4d4d7#-usage)
-    
-*   [API Reference](https://yupp.ai/chat/36923d1e-9bc8-4a0a-a17f-ed7dc9d4d4d7#-api-reference)
-    
-*   [Available Tools](https://yupp.ai/chat/36923d1e-9bc8-4a0a-a17f-ed7dc9d4d4d7#-available-tools)
-    
-*   [MCP Integration](https://yupp.ai/chat/36923d1e-9bc8-4a0a-a17f-ed7dc9d4d4d7#-mcp-integration)
-    
-*   [AI Components](https://yupp.ai/chat/36923d1e-9bc8-4a0a-a17f-ed7dc9d4d4d7#-ai-components)
-    
-*   [Blockchain Integration](https://yupp.ai/chat/36923d1e-9bc8-4a0a-a17f-ed7dc9d4d4d7#️-blockchain-integration)
-    
-*   [Development](https://yupp.ai/chat/36923d1e-9bc8-4a0a-a17f-ed7dc9d4d4d7#-development)
-    
-*   [Testing](https://yupp.ai/chat/36923d1e-9bc8-4a0a-a17f-ed7dc9d4d4d7#-testing)
-    
-*   [Deployment](https://yupp.ai/chat/36923d1e-9bc8-4a0a-a17f-ed7dc9d4d4d7#-deployment)
-    
-*   [Contributing](https://yupp.ai/chat/36923d1e-9bc8-4a0a-a17f-ed7dc9d4d4d7#-contributing)
-    
-*   [License](https://yupp.ai/chat/36923d1e-9bc8-4a0a-a17f-ed7dc9d4d4d7#-license)
-    
 
 🎯 Overview
 -----------
